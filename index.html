@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <style>
+    .ratin_group{
+      background-image: url(img/off.svg);
+    }
+    .rating_star:checked{
+   background-image: url(img/on.svg); 
+  }
+
+  </style>
+    <div class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="row">
+                    <div class="col-lg-2 offset-lg-10">
+                        <a class="login__btn" href="#" data-toggle="modal" data-target="#exampleModal">Вход на сайт <i class="fa fa-lock"></i></a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Вход на сайт</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-row">
+                                          <div class="col-lg-12">
+                                            <label for="validationCustom01">Логин</label>
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Логин" value="" required>
+                                            <div class="invalid-feedback">
+                                                Пожалуйста, введите ваш логин.
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-12">
+                                            <label for="validationCustom02">Пароль</label>
+                                            <input type="password" class="form-control" id="validationCustom02" placeholder="Пароль" value="" required aria-describedby="passwordHelpInline"> 
+                                            <div class="invalid-feedback">
+                                                Пожалуйста, введите ваш пароль.
+                                              </div>
+                                        </div>
+                                          <div class="col-lg-12">
+                                            <label for="validationCustom03">E-mail</label>
+                                            <input type="text" class="form-control" id="validationCustom03" placeholder="E-mail" value="" required>
+                                            <div class="invalid-feedback">
+                                                Пожалуйста, введите ваш e-mail.
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-12">
+                                            <label for="validationCustom04">Номер телефона</label>
+                                            <input type="number" class="form-control" id="validationCustom04" placeholder="Номер телефона" value="" required> 
+                                            <div class="invalid-feedback">
+                                                Пожалуйста, введите ваш номер телефона.
+                                              </div>
+                                        </div>
+                                    </div>
+                                        
+                                        <div class="form-group">
+                                          
+                                        </div>
+                                        <button class="btn__vxod" type="submit">Войти</button>
+                                      </form>
+                                      
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn__close" data-dismiss="modal">Закрыть</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <hr color="#d7d7d7">
+            <div class="header__content">
+                <div class="row">
+                    <div class="col-lg-4">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                    <div class="nav__content">
+                    <ul class="nav justify-content-end">
+                        <li class="nav__link nav-item"><a class="nav-link active" href="#"> Объявления </a></li>
+                        <li class="nav__link nav-item"><a class="nav-link active" href="#"> Каталоги </a></li>
+                        <li class="nav__link nav-item"><a class="nav-link active" href="#"> Участники </a></li>
+                        <li class="nav__link nav-item"><a class="nav-link active" href="#"> Партнеры </a></li>
+                        <li class="nav__link nav-item"><a class="nav-link active" href="#"> О платформе </a></li>
+                        <li class="nav__link nav-item"><a class="nav-link active" href="#"> Новости </a></li>
+                        <li class=" nav-item"><a class="nav-link active" href="#ModalSearch" id="btn_search"> <i class="fa fa-search"></i></a></li>
+                        <div id="ModalSearch" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Поиск</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control">
+
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <button class="btn__search" type="submit">Найти <i class="fa fa-search" ></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                        
+                                  </div>
+                                  <div class="modal-footer">
+                                <button type="button" class="btn__close" data-dismiss="modal">Закрыть</button>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <li class=" nav-item"><a class="nav-link active" href="#ModalFav" id="btn_fav"> <i class="fa fa-heart-o"></i> </a></li>
+                        <div id="ModalFav" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Избранное</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    
+                                    <ul class="list-unstyled">
+                                        <li class="media col-lg-10" id="con_rem1">
+                                          <img class="mr-3" src="img/bmin.jpg" alt="Generic placeholder image">
+                                          <div class="media-body">
+                                            <h5 class="mt-0 mb-1">Рюкзак PUMA Синий</h5>
+                                            
+                                            <h5>Цена: 5 000.00 KZT/Шт</h5>
+                                            <a class="rem" href="#con_rem1" id="btn_rem1">Удалить из избранного</a>
+                                          </div>
+                                        </li>
+                                        
+                                        <li class="media my-4 col-lg-10" id="con_rem2">
+                                          <img class="mr-3" src="img/blackmin.jpg" alt="Generic placeholder image">
+                                          <div class="media-body">
+                                            <h5 class="mt-0 mb-1">Рюкзак PUMA Черный</h5>
+                                            <h5>Цена: 5 000.00 KZT/Шт</h5>
+                                            <a class="rem" href="#con_rem3" id="btn_rem2">Удалить из избранного</a>
+                                          </div>
+                                        </li>
+                                        <li class="media col-lg-10" id="con_rem3">
+                                          <img class="mr-3" src="img/goldmin.jpg" alt="Generic placeholder image">
+                                          <div class="media-body">
+                                            <h5 class="mt-0 mb-1">Рюкзак PUMA Желтый</h5>
+                                            
+                                            <h5>Цена: 5 000.00 KZT/Шт</h5>
+                                            <a class="rem" href="#con_rem3" id="btn_rem3">Удалить из избранного</a>
+                                          </div>
+                                        </li>
+                                      </ul>    
+
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn__close" data-dismiss="modal">Закрыть</button>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <li class=" nav-item"><a class="nav-link active" href="#ModalBag"  id="btn_bag"> <i class="fa fa-shopping-bag"></i> </a></li>
+                        <div id="ModalBag" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Корзина товаров</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <ul class="list-unstyled" id="cont_rem">
+                                      <li class="media col-lg-10">
+                                        <img class="mr-3" src="img/bmin.jpg" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                          <h5 class="mt-0 mb-1">Рюкзак PUMA Синий</h5>
+                            
+                                          <h5>Цена: 5 000.00 KZT/Шт</h5>
+                                          
+                                        </div>
+                                      </li>
+                                      
+                                      <li class="media my-4 col-lg-10" >
+                                        <img class="mr-3" src="img/blackmin.jpg" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                          <h5 class="mt-0 mb-1">Рюкзак PUMA Черный</h5>
+                                          <h5>Цена: 5 000.00 KZT/Шт</h5>
+                                          
+                                        </div>
+                                      </li>
+                                      <li class="media col-lg-10" >
+                                        <img class="mr-3" src="img/goldmin.jpg" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                          <h5 class="mt-0 mb-1">Рюкзак PUMA Желтый</h5>
+                                          
+                                          <h5>Цена: 5 000.00 KZT/Шт</h5>
+                                          
+                                        </div>
+                                      </li>
+                                    </ul> 
+                                        
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn__close"><a class="rem_all" href="#cont_rem" id="btn_rem_all">Очистить корзину</a></button>
+                                    <button type="button" class="btn__close" data-dismiss="modal">Закрыть</button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="left__column">
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="itm1 carousel-item active" data-interval="10000">
+                                <img src="img/b1.jpg" class="d-block w-50" alt="...">
+                              </div>
+                              <div class="itm2 carousel-item" data-interval="2000">
+                                <img src="img/b2.jpg" class="d-block w-50" alt="...">
+                              </div>
+                              <div class="itm3 carousel-item">
+                                <img src="img/b3.jpg" class="d-block w-50" alt="...">
+                              </div>
+                            </div>
+                            <a class=" carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                              <span class="prev carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="prev sr-only">Previous</span>
+                            </a>
+                            <a class=" carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                              <span class="next carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="next sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="right__column">
+                        <h4 class="prod__name col-lg-4">Рюкзак PUMA</h4> 
+                        <p class="watch col-lg-5">Просмотров: 200</p>
+                        <div class="col stars">
+                          <fieldset class="rating">
+                        <legend class="rating_caption"> Рейтинг товара:</legend>
+                        <div class="ratin_group">
+                        <input class="rating_star" type="radio" name="star" value="1" aria-label="Ужасно" checked>
+                        <input class="rating_star" type="radio" name="star" value="2" aria-label="Плохо">
+                        <input class="rating_star" type="radio" name="star" value="3" aria-label="Нормально">
+                        <input class="rating_star" type="radio" name="star" value="4" aria-label="Хорошо">
+                        <input class="rating_star" type="radio" name="star" value="5" aria-label="Отлично ">
+                      </div>
+                      </fieldset>
+                      </div>
+                        <hr color="#d7d7d7">
+                   <h1 class="price col"> 5 000.00 KZT/Шт</h1>
+                   <p class="col skl">Количество на складе: (1)</p><div class="product-color">
+                   <ul class="collor col">
+                    <li class="name__col">Цвет:</li>
+                      <li class="green"> <button  class="g"> <i class="gr_sq fa fa-square"></i> Зеленый </button> </li>
+                      <li class="yellow"> <button  class="y"> <i class="ye_sq fa fa-square"></i> Желтый  </li>
+                      <li class="red"><button  class="r"> <i class="re_sq fa fa-square"></i> Красный </li>
+                      <li class="blue"> <button  class="b"> <i class="bl_sq fa fa-square"></i> Синий </li>
+                    </ul>
+                    <p class="skl"></p>
+
+
+
+         
+
+                   <p class="col">Способ доставки:</p>
+
+                   <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="color: #f47920;">Самовывоз</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="color: #f47920;">Доставка</a>
+                    </li>
+                    
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <div class="custom-control custom-radio" >
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" >
+                        <label class="custom-control-label" for="customRadio1"  >Мангеликель 17 ЖК Коркем (Мангеликель 17)</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Шоурум №1 2018 (Абая 8 Торговый дом Алтын)</label>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="form-row">
+                      <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                          <div class="col-lg-12">
+                            <label for="validationCustom01">Город</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Город" value="" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите ваш Город.
+                              </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <label for="validationCustom02">Улица</label>
+                            <input type="password" class="form-control" id="validationCustom02" placeholder="Улица" value="" required aria-describedby="passwordHelpInline"> 
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите вашу улицу.
+                              </div>
+                        </div>
+                          <div class="col-lg-12">
+                            <label for="validationCustom03">Дом</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="Дом" value="" required>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите ваш дом.
+                              </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <label for="validationCustom04">Кваритра</label>
+                            <input type="number" class="form-control" id="validationCustom04" placeholder="Квартира" value="" required> 
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите вашу квартиру.
+                              </div>
+                        </div>
+                    </div>
+                        
+                        <div class="form-group">
+                          
+                        </div>
+                        <button class="btn__vxod" type="submit">Сохранить</button>
+                      </form>
+                   
+                  </div>
+                </div>
+                    </div>
+                    <p class="diliv"></p>
+                </div>
+                <button class="add_cart"><i class="fa fa-shopping-bag"></i> Добавить в корзину</button>
+                <button class="add_fav"><i class="fa fa-heart-o"></i> В избранное </button>
+                <button class="opt">Оптовые предложения</button>
+
+                <p class="diliv"></p>
+
+                <div class="under">
+                  <ul>
+                    <li class="carts"> Товаров в корзине: 3 </li>
+                    <li class="favourite"> В избранном: 3 </li>
+                    <li class="rep"> Поделиться товаром: <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-vk"></i></a> <a href="#"><i class="fa fa-odnoklassniki"> </i></a> <a href="#"><i class="fa fa-google-plus"></i></a>    <a href="#"><i class="fa fa-instagram"></i></a> </li>
+                  </ul>
+                </div>
+            </div>
+            
+
+        
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+<script src="myscr.js"></script>
+</body>
+</html>

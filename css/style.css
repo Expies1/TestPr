@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,400&display=swap');
+
+body{
+    font-family: "Mulish";
+    font-weight: 400;
+    font-size: 16px;
+    color: #202020;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1366px;
+}
+
+/* Верхние кнопки */
+
+.login__btn{
+    margin-top: 30px;
+    color: #202020;
+   
+}
+.fa-lock{
+    color: #d0d0d0;
+    margin-left: 10px;
+}
+.login__btn:hover
+
+  {
+    color: #f47920;
+    transition: .4s;
+    
+}
+
+/* Навигация */
+.nav__content .active{
+color:#202020;
+margin-top: 10px;
+}
+.nav__link
+:hover
+{
+    color: #f47920;
+    transition: .4s;
+    border-bottom:1px solid #f47920;
+}
+
+.fa-search, .fa-heart-o, .fa-shopping-bag, .fa-times-circle{
+    color: #f47920;
+}
+
+.header__content{
+    margin-bottom: 50px;
+}
+
+/* Слайдер */
+.next, .prev{
+   
+   background-color:#e9e9e9;
+}
+.itm1, .itm2, .itm3{
+    margin-left: 120px;
+}
+
+/* Контент справа */
+.prod__name{
+    font-size: 24px;
+}
+
+
+.watch{
+    font-size: 16px;
+    color: #e5e5e5;
+}
+.price{
+    padding-top: 10px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+.skl{
+    font-size: 16px;
+    color: #e5e5e5;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #d7d7d7 ;
+}
+.cl{
+    border-bottom: 1px dashed #d7d7d7 ;
+    padding-bottom: 20px;
+}
+
+
+.btn__vxod, .btn__close{
+    color: white ;
+    background-color: #f47920;
+    border-radius: 7px;
+    border-color: #f47920;
+    padding: 10px 10px 10px 10px;
+}
+
+.btn__search{
+    color:#f47920;
+    background-color:white; 
+    border-radius: 7px; ; 
+    border-color: #f47920;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/* Удаление */
+
+.rem
+{
+    text-decoration: none;
+    color: #f47920;
+}
+.rem:hover{
+    text-decoration: none;
+    color: #f47920;
+}
+
+.rem_all{
+    color: white;
+}
+.rem_all:hover{
+    text-decoration: none;
+    color:white;
+}
+.diliv{
+    border-bottom: 1px dashed #d7d7d7 ;
+    padding-bottom: 20px;
+}
+
+/* Кнопки снизу */
+
+.add_cart  {
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    
+    background-color: white;
+    border-color: black;
+
+}
+.add_cart >.fa-shopping-bag{
+    color: black;
+}
+.add_cart:hover{ 
+background-color:#f47920;
+
+}
+.add_fav{
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    
+    background-color: white;
+    border-color: black;
+}
+.add_fav >.fa-heart-o{
+    color: black;
+}
+.add_fav:hover{ 
+    background-color:#f47920;
+}
+
+.opt
+{
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    
+    margin-left: 50px;
+    background-color: white;
+    border-color: black;
+}
+.opt:hover{
+    background-color:#f47920;
+}
+ul, li{
+    list-style: none;
+    display: inline;
+}
+
+/* Подвал */
+
+.under{
+    margin-bottom: 20px;
+}
+.favourite{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.carts{
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.rep{
+    margin-left: 50px;
+}
+.rep>a{
+    color:#f47920;
+}
+
+/* Цвет товара */
+.g,.y,.r,.b{
+    background-color: white;
+    border-color: #f47920
+}
+
+.g:hover,.y:hover,.r:hover,.b:hover{
+    border-color:#f47920;
+}
+
+.gr_sq{
+    color: #86c255;
+}
+.ye_sq{
+    color: #e9eb5b;
+}
+.re_sq{
+    color:#e84b4b;
+}
+.bl_sq{
+    color: #4b91e8;
+}
+
+.name__col{
+    margin-right: 20px;
+}
+/* Рейтинг */
+.rating{
+margin: 0;
+padding: 0;
+border: none;
+}
+.rating_caption{
+padding: 0;
+}
+.rating_star{
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    background-size: 15px auto;
+    background-repeat: repeat-x;
+}
+.ratin_group{
+    position: relative;
+    width: 75px;
+    height: 15px;
+    background-size: 15px auto;
+}
+.rating_star:nth-of-type(1){
+    z-index: 5;
+    width: 15px;
+}
+.rating_star:nth-of-type(2){
+    z-index: 4;
+    width: 30px;
+}
+.rating_star:nth-of-type(3){
+    z-index: 3;
+    width: 45px;
+}
+.rating_star:nth-of-type(4){
+    z-index: 2;
+    width: 60px;
+}
+.rating_star:nth-of-type(5){
+    z-index: 1;
+    width: 75px;
+}
+.rating_star:focus{
+outline: none;
+}
+
