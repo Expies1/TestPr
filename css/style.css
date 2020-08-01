@@ -12,6 +12,9 @@ a{
 .container{
     max-width: 1366px;
 }
+hr{
+    color: #d7d7d7;
+}
 
 /* Верхние кнопки */
 
@@ -241,6 +244,8 @@ padding: 0;
     height: 15px;
     background-size: 15px auto;
     background-repeat: repeat-x;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .ratin_group{
     position: relative;
